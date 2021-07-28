@@ -13,7 +13,6 @@ local Themes = {
 	DarkContrastColor = Color3.fromRGB(25, 25, 25),
 }
 
-
 function library.create(what, propri)
 	local instance = Instance.new(what)
 
@@ -28,8 +27,8 @@ end
 
 function library.initiate(setting)
 
-	if game:GetService("CoreGui"):FindFirstChild("Astolbo") then
-		game:GetService("CoreGui").Astolbo:Destroy()
+	if game:GetService("CoreGui"):FindFirstChild("Azure") then
+		game:GetService("CoreGui").Azure:Destroy()
 	end
 
 	local firstcategory = true
@@ -39,7 +38,7 @@ function library.initiate(setting)
 	local main = {}
 
 	main.screengui = library.create("ScreenGui" ,{
-		Name = "Astolbo",
+		Name = "Azure",
 		ZIndexBehavior = Enum.ZIndexBehavior.Global,
 		ResetOnSpawn = false,
 	})
@@ -282,7 +281,7 @@ function library.initiate(setting)
 		Position = UDim2.new(0, 8, 0, 0),
 		Size = UDim2.new(0, 200, 0, 38),
 		Font = Enum.Font.GothamBold,
-		Text = "Astolbo",
+		Text = "Azure",
 		TextColor3 = Themes.TextColor,
 		TextSize = 20.000,
 		TextXAlignment = Enum.TextXAlignment.Left,
@@ -1468,7 +1467,7 @@ function library.initiate(setting)
 				end)
 
 				checkconnection = game:GetService("CoreGui").ChildRemoved:Connect(function(child)
-					if child.Name == "Astolbo" then 
+					if child.Name == "Azure" then 
 						if inputconnection then
 							inputconnection:Disconnect()
 							inputconnection = nil
@@ -2832,4 +2831,5 @@ function library:SetThemeColor(Theme, Color, TransparencyValue)
 		end 
 	end
 end
+
 return library

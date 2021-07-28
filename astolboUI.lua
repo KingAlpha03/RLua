@@ -36,8 +36,8 @@ end
 
 function library.initiate(setting)
 
-	if game:GetService("CoreGui"):FindFirstChild("Azure") then
-		game:GetService("CoreGui").Azure:Destroy()
+	if game:GetService("CoreGui"):FindFirstChild("Astolbo") then
+		game:GetService("CoreGui").Astolbo:Destroy()
 	end
 
 	local firstcategory = true
@@ -47,7 +47,7 @@ function library.initiate(setting)
 	local main = {}
 
 	main.screengui = library.create("ScreenGui" ,{
-		Name = "Azure",
+		Name = "Astolbo",
 		ZIndexBehavior = Enum.ZIndexBehavior.Global,
 		ResetOnSpawn = false,
 	})
@@ -290,7 +290,7 @@ function library.initiate(setting)
 		Position = UDim2.new(0, 8, 0, 0),
 		Size = UDim2.new(0, 200, 0, 38),
 		Font = Enum.Font.GothamBold,
-		Text = "Azure",
+		Text = "Astolbo",
 		TextColor3 = Themes.TextColor,
 		TextSize = 20.000,
 		TextXAlignment = Enum.TextXAlignment.Left,
@@ -1476,7 +1476,7 @@ function library.initiate(setting)
 				end)
 
 				checkconnection = game:GetService("CoreGui").ChildRemoved:Connect(function(child)
-					if child.Name == "Azure" then 
+					if child.Name == "Astolbo" then 
 						if inputconnection then
 							inputconnection:Disconnect()
 							inputconnection = nil

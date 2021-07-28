@@ -13,6 +13,16 @@ local Themes = {
 	DarkContrastColor = Color3.fromRGB(25, 25, 25),
 }
 
+local ts = game:GetService("TweenService")
+local uis = game:GetService("UserInputService")
+local mouse = game:GetService("Players").LocalPlayer:GetMouse()
+local rs = game:GetService("RunService")
+local txts = game:GetService("TextService")
+local playergui = game:GetService("Players").LocalPlayer.PlayerGui
+local categoryopacity,categorytopacity = 0,0
+local textcolorsave = Color3.fromRGB(255,255,255)
+local players = game:GetService("Players")
+
 function library.create(what, propri)
 	local instance = Instance.new(what)
 

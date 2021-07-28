@@ -2831,5 +2831,5 @@ function library:SetThemeColor(Theme, Color, TransparencyValue)
 			end
 		end 
 	end
-	return library
 end
+return library

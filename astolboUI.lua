@@ -12,7 +12,6 @@ local Themes = {
 	GrayContrastColor = Color3.fromRGB(35, 35, 35),
 	DarkContrastColor = Color3.fromRGB(25, 25, 25),
 }
-
 local ts = game:GetService("TweenService")
 local uis = game:GetService("UserInputService")
 local mouse = game:GetService("Players").LocalPlayer:GetMouse()
